@@ -45,5 +45,6 @@ section#login > div#imagem {
 }
 
 section#login > div#formulário {
+    display: block;
     padding: 10px;
 }
