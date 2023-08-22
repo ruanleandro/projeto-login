@@ -3,10 +3,11 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     form > input[type=submit],
     form > a.botao {
+        text-align: center;
         display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
-        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
-        height: 40px;
-        margin: 0 5px; /* Adicionando espaçamento horizontal entre os botões */
+        width: calc(50% - 5px); /* Definindo o botão "Entrar" mais largo com 50% do espaço disponível */
+        height: 50px;
+        margin: 5px auto; /* Adicionando espaçamento horizontal entre os botões */
     }
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82); }
@@ -30,9 +31,9 @@
     form > input[type=submit],
     form > a.botao {
         display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
-        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
-        height: 40px;
-        margin: 0 5px; /* Adicionando espaçamento horizontal entre os botões */
+        width: calc(50% - 5px); /* Definindo o botão "Entrar" mais largo com 50% do espaço disponível */
+        height: 50px;
+        margin: 5px auto; /* Adicionando espaçamento horizontal entre os botões */
     }
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82); }
@@ -60,14 +61,15 @@
     form > input[type=submit] {
         display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
         font-size: 1em;
-        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
         height: 40px;
+        padding-top: 7px;
+        margin-top: 5px;
         background-color: #49a09d;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin-right: 5px; /* Adicionando um espaçamento entre os botões */
+        margin-right: 5px; /* Adicionando um espaçamento entre os botões */ 
     }
     form > a.botao {
         display: inline-block; /* Mesmas mudanças para o botão "Esqueci a senha" */
