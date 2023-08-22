@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    form > input[type=submit],
+    form > a.botao {
+        display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
+        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
+        height: 40px;
+        margin: 0 5px; /* Adicionando espaçamento horizontal entre os botões */
+    }
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82); }
 
@@ -20,6 +27,13 @@
     }
 }
 @media screen and (min-width: 992px) {
+    form > input[type=submit],
+    form > a.botao {
+        display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
+        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
+        height: 40px;
+        margin: 0 5px; /* Adicionando espaçamento horizontal entre os botões */
+    }
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82); }
 
@@ -34,5 +48,37 @@
     section#login > div#formulario {
         float: right;
         width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+    }
+    form > input[type=submit] {
+        display: inline-block; /* Mudando para inline-block para que os botões fiquem lado a lado */
+        font-size: 1em;
+        width: auto; /* Removendo a largura fixa para que os botões possam ajustar automaticamente */
+        height: 40px;
+        background-color: #49a09d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px; /* Adicionando um espaçamento entre os botões */
+    }
+    form > a.botao {
+        display: inline-block; /* Mesmas mudanças para o botão "Esqueci a senha" */
+        text-align: center;
+        font-size: 1em;
+        height: 40px;
+        padding-top: 7px;
+        margin-top: 5px;
+        background-color: white;
+        border: 1px solid #49a09d;
+        border-radius: 5px;
+        text-decoration: none;
     }
 }

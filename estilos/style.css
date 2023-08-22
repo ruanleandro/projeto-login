@@ -39,7 +39,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/pexels-vinícius-estevão-2896034\ \(1\).jpg) no-repeat;
+    background: #5f2c82 url(../imagens/pexels-vinícius-estevão-2896034\ \(1\).jpg);
     background-size: cover;
     height: 200px;
 }
@@ -59,7 +59,7 @@ div#formulário > p {
 }
 
 div.campo > label {
-    display: none
+    display: none;
 }
 
 form > div.campo {
@@ -80,6 +80,7 @@ form > input[type=submit] {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 form > input[type=submit]:hover {
